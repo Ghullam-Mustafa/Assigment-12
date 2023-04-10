@@ -18,7 +18,7 @@ export default function Home() {
         <Navbar />
         <div className="mx-auto container w-10/12 mt-2 grid pb-10 lg:grid-cols-2 mg:grid-cols-2 sm:grid-cols-1   gap-5">
           <div className="mt-20  lg:hidden  ">
-            <Image src='/Frame.png' width={5000} height={5000} />
+            <Image src='/Frame.png' width={5000} height={5000} alt="Picture of the author" />
           </div>
           <div className="lg:mt-32  mt-10   ">
             <p className="text-white text-7xl  font-medium font-sans  ">Creative Digital  Agency</p>
@@ -27,7 +27,7 @@ export default function Home() {
             <Button title="Learn More" />
           </div>
           <div className="mt-20  hidden lg:block  ">
-            <Image src='/Frame.png' width={5000} height={5000} />
+            <Image src='/Frame.png' width={5000} height={5000} alt="Picture of the author" />
           </div>
         </div>
       </div>
@@ -55,9 +55,9 @@ export default function Home() {
           <p className="text-[#262A4E] text-5xl text-center">Our top dedicated professionals.</p>
         </div>
         <div className=" w-10/12  mx-auto grid lg:grid-cols-2 justify-items-center  md:grid-cols-2 sm:grid-cols-1 gap-10 md:pb-20 my-5 ">
-          {/* <div className=""><Image src="/certificate.jpg" width={500} height={500}/> </div> */}
-          <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " /> </div>
-          <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg " /> </div>
+          {/* <div className=""><Image src="/certificate.jpg" width={500} height={500} alt="Picture of the author"/> </div> */}
+          <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
+          <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="flex justify-between">
             <p className="text-[#262A4E] text-5xl ">Choose A Plan That’s Right For You</p>
             <div className=" hidden md:block">
-              <Image src='/Group 29.png' width={100} height={500} />
+              <Image src='/Group 29.png' width={100} height={500} alt="Picture of the author" />
             </div>
           </div>
         </div>
