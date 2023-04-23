@@ -3,12 +3,12 @@ import About from "./(components)/about/about";
 import Plane from "./(components)/plane/plane";
 import Navbar from "./(components)/navbar/navbar";
 import Button from "./(components)/button/button";
-import Card from './(components)/servicesCard/servicesCard';
+import Serviceses from "./(components)/serviceses/serviceses";
 import PriceCard from "./(components)/priceCard/priceCard";
 import ClientCard from "./(components)/clientCard/clientCard";
 import PortfolioCards from "./(components)/portfolioCards/portfolioCards";
 import BlogsCards from "./(components)/blogsCards/blogsCards";
-import Footer from "./(components)/footer/footer";
+
 
 export default function Home() {
   return (
@@ -35,17 +35,9 @@ export default function Home() {
       <div className="secondSection bg-[#FFFFFF]">
 
 
+<Serviceses/>
 
-
-        <div className="services lg:mt-20">
-          <p className="text-[#2370C8] text-center text-xl">OUR SERVICES</p>
-          <p className="text-4xl text-center">We Are Providing Digital services</p>
-          <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 my-10 ">
-            <div className=""><Card src='/web.webp' title='Web App Development' /> </div>
-            <div className=""><Card src='/mobile.webp' title='Mobile App Development' /> </div>
-            <div className=""><Card src='/ai.webp' title='AI Based Solutions' /> </div>
-          </div>
-        </div>
+        
 
 
        <About/>

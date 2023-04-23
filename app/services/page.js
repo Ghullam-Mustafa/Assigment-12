@@ -1,7 +1,11 @@
-
+import Serviceses from "../(components)/serviceses/serviceses"
+import Header from "../(components)/header/header"
 
 export default function page() {
   return (
-    <div>services</div>
+    <>
+    <Header title="Services" />
+    <Serviceses/>
+    </>
   )
 }
