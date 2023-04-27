@@ -1,7 +1,7 @@
 import Image from "next/image";
 import About from "./(components)/about/about";
+import Plane from "./(components)/plane/plane";
 import Navbar from "./(components)/navbar/navbar";
-import Plans from "./(components)/plansCard/plansCards";
 import Button from "./(components)/button/button";
 import Card from './(components)/servicesCard/servicesCard';
 import PriceCard from "./(components)/priceCard/priceCard";
@@ -51,24 +51,8 @@ export default function Home() {
        <About/>
       </div>
 
-
-      <div className="things  bg-[#F2F9FF] py-10">
-        <div className=" w-10/12  p-5 mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 my-10 border-[5px] border-neutral-50	 ">
-          <div className="">
-            <Plans src="/plane.png" title="Smart planing" />
-          </div>
-
-          <div className="">
-            <Plans src="/partnership.png" title="Our partnership" />
-          </div>
-
-          <div className="">
-            <Plans src="/idea.png" title="Super ideas" />
-          </div>
-
-
-        </div>
-      </div>
+      <Plane/>
+     
 
       <div className="portfolio w-10/12 mx-auto py-14 ">
         <p className="text-[#2370C8] text-xl">OUR PORTFOLIO</p>
