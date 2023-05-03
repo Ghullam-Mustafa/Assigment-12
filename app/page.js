@@ -6,6 +6,7 @@ import Card from './(components)/servicesCard/servicesCard';
 import PriceCard from "./(components)/priceCard/priceCard";
 import ClientCard from "./(components)/clientCard/clientCard";
 import PortfolioCards from "./(components)/portfolioCards/portfolioCards";
+import BlogsCards from "./(components)/blogsCards/blogsCards";
 
 export default function Home() {
   return (
@@ -147,6 +148,20 @@ export default function Home() {
         </div>
       </div>
 
+
+      <div className="pricing bg-#FFFFFF">
+        <div className="w-10/12 mx-auto py-14">
+        <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4">
+    <BlogsCards title="Bluebery" />
+    <BlogsCards title="Bluebery" />
+    <BlogsCards title="Bluebery" />
+    </div>
+  </div>
+</section>
+        </div>
+      </div>
     </>
   )
 }
