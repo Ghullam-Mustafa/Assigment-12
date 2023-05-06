@@ -3,6 +3,7 @@ import Navbar from "./(components)/navbar/navbar";
 import Plans from "./(components)/plansCard/plansCards";
 import Button from "./(components)/button/button";
 import Card from './(components)/servicesCard/servicesCard';
+import PriceCard from "./(components)/priceCard/priceCard";
 import PortfolioCards from "./(components)/portfolioCards/portfolioCards";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
             <p className="text-white text-7xl  font-medium font-sans  ">Creative Digital  Agency</p>
             <p className="text-white py-5  text-sm font-normal leading-7 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 
-            <Button />
+            <Button title="Learn More" />
           </div>
           <div className="mt-20  hidden lg:block  ">
             <Image src='/Frame.png' width={5000} height={5000} />
@@ -54,7 +55,7 @@ export default function Home() {
               <p className="py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde optio sunt nesciunt deserunt totam accusamus quod ratione. Dolorem numquam non corporis, dolores ducimus rerum sit veniam soluta recusandae? Maxime!</p>
 
               <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, deleniti ut excepturi labore facere nobis corporis </p>
-              <Button />
+              <Button title="Learn More" />
             </div>
           </div>
         </div>
@@ -106,16 +107,33 @@ export default function Home() {
 
       <div className="team bg-[#F2F9FF] ">
         <div className="w-10/12 mx-auto py-14">
-            <p className="text-[#2370C8] text-xl text-center">OUR TEAM</p>
-            <p className="text-[#262A4E] text-5xl text-center">Our top dedicated professionals.</p>
+          <p className="text-[#2370C8] text-xl text-center">OUR TEAM</p>
+          <p className="text-[#262A4E] text-5xl text-center">Our top dedicated professionals.</p>
         </div>
-        <div className=" w-10/12  mx-auto grid lg:grid-cols-2 justify-items-center  md:grid-cols-2 sm:grid-cols-1 gap-10 my-10 ">
-            {/* <div className=""><Image src="/certificate.jpg" width={500} height={500}/> </div> */}
-            <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " /> </div>
-            <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg "/> </div>
-          </div>
+        <div className=" w-10/12  mx-auto grid lg:grid-cols-2 justify-items-center  md:grid-cols-2 sm:grid-cols-1 gap-10 md:pb-20 my-5 ">
+          {/* <div className=""><Image src="/certificate.jpg" width={500} height={500}/> </div> */}
+          <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " /> </div>
+          <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg " /> </div>
+        </div>
       </div>
 
+      <div className="pricing bg-#FFFFFF">
+        <div className="w-10/12 mx-auto py-14">
+          <p className="text-[#2370C8] text-xl ">OUR PRICING</p>
+          <div className="flex justify-between">
+            <p className="text-[#262A4E] text-5xl ">Choose A Plan That’s Right For You</p>
+            <div className=" hidden md:block">
+              <Image src='/Group 29.png' width={100} height={500} />
+            </div>
+          </div>
+        </div>
+        <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 my-10 ">
+            <div className=""><PriceCard title="Basic plane" src="/Premium.png" price="$50" /> </div>
+            <div className=""><PriceCard title="Standart Plan" src="/Premium.png" price="$99" /> </div>
+            <div className=""><PriceCard title="Premium Plan" src="/Premium.png" price="$150" /> </div>
+          </div>
+      </div>
+     
 
     </>
   )
