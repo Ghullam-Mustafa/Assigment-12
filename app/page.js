@@ -33,7 +33,7 @@ export default function Home() {
 
 
         <div className="services lg:mt-20">
-          <p className="text-[#2370C8] text-center">OUR SERVICES</p>
+          <p className="text-[#2370C8] text-center text-xl">OUR SERVICES</p>
           <p className="text-4xl text-center">We Are Providing Digital services</p>
           <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 my-10 ">
             <div className=""><Card src='/web.webp' title='Web App Development' /> </div>
@@ -80,7 +80,7 @@ export default function Home() {
       </div>
 
       <div className="portfolio w-10/12 mx-auto py-14 ">
-        <p className="text-[#2370C8]">OUR PORTFOLIO</p>
+        <p className="text-[#2370C8] text-xl">OUR PORTFOLIO</p>
         <p className="text-5xl font-medium text-[#262A4E]">Take A Look  At Our Latest Work</p>
 
 
@@ -101,6 +101,19 @@ export default function Home() {
           <div className=""><PortfolioCards src="https://smoggy-friction.surge.sh/" /> </div>
           <div className=""><PortfolioCards src="https://sweet-sky.surge.sh/" /> </div>
         </div>
+      </div>
+
+
+      <div className="team bg-[#F2F9FF] ">
+        <div className="w-10/12 mx-auto py-14">
+            <p className="text-[#2370C8] text-xl text-center">OUR TEAM</p>
+            <p className="text-[#262A4E] text-5xl text-center">Our top dedicated professionals.</p>
+        </div>
+        <div className=" w-10/12  mx-auto grid lg:grid-cols-2 justify-items-center  md:grid-cols-2 sm:grid-cols-1 gap-10 my-10 ">
+            {/* <div className=""><Image src="/certificate.jpg" width={500} height={500}/> </div> */}
+            <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " /> </div>
+            <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg "/> </div>
+          </div>
       </div>
 
 
