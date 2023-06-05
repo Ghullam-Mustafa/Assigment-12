@@ -1,8 +1,10 @@
-import Navbar from "./(components)/navbar/navbar"
-import Plans from "./(components)/plansCard/plansCards"
-import Image from "next/image"
-import Button from "./(components)/button/button"
-import Card from './(components)/servicesCard/servicesCard'
+import Image from "next/image";
+import Navbar from "./(components)/navbar/navbar";
+import Plans from "./(components)/plansCard/plansCards";
+import Button from "./(components)/button/button";
+import Card from './(components)/servicesCard/servicesCard';
+import PortfolioCards from "./(components)/portfolioCards/portfolioCards";
+
 export default function Home() {
   return (
     <>
@@ -37,7 +39,6 @@ export default function Home() {
             <div className=""><Card src='/web.webp' title='Web App Development' /> </div>
             <div className=""><Card src='/mobile.webp' title='Mobile App Development' /> </div>
             <div className=""><Card src='/ai.webp' title='AI Based Solutions' /> </div>
-
           </div>
         </div>
 
@@ -79,9 +80,30 @@ export default function Home() {
       </div>
 
       <div className="portfolio w-10/12 mx-auto py-14 ">
-          <p className="text-[#2370C8]">OUR PORTFOLIO</p>
-          <p className="text-5xl font-medium text-[#262A4E]">Take A Look  At Our Latest Work</p>
+        <p className="text-[#2370C8]">OUR PORTFOLIO</p>
+        <p className="text-5xl font-medium text-[#262A4E]">Take A Look  At Our Latest Work</p>
+
+
+        <div className="grid mx-auto lg:grid-cols-3 sm:grid-cols-1  md:grid-cols-2  sm:justify-items-center justify-items-stretch md:py-10 gap-10 ">
+          <div className="">
+            <PortfolioCards src="https://assignment01-liart.vercel.app/" />
+          </div>
+          <div className="">
+            <PortfolioCards src="https://react-todo-app-peach-ten.vercel.app/" />
+          </div>
+          <div className="">
+            <PortfolioCards src="https://todo-appmustafa.surge.sh/" />
+          </div>
+
+
+
+          <div className=""><PortfolioCards src="https://calculatorapp-mustafa.surge.sh/" /> </div>
+          <div className=""><PortfolioCards src="https://smoggy-friction.surge.sh/" /> </div>
+          <div className=""><PortfolioCards src="https://sweet-sky.surge.sh/" /> </div>
+        </div>
       </div>
+
+
     </>
   )
 }
