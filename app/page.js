@@ -77,6 +77,11 @@ export default function Home() {
 
         </div>
       </div>
+
+      <div className="portfolio w-10/12 mx-auto py-14 ">
+          <p className="text-[#2370C8]">OUR PORTFOLIO</p>
+          <p className="text-5xl font-medium text-[#262A4E]">Take A Look  At Our Latest Work</p>
+      </div>
     </>
   )
 }
