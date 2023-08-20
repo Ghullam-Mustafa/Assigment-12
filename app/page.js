@@ -1,5 +1,6 @@
 import Navbar from "./(components)/navbar/navbar"
 import Image from "next/image"
+import Button from "./(components)/button/button"
 import Card from './(components)/servicesCard/servicesCard'
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
             <p className="text-white text-7xl  font-medium font-sans  ">Creative Digital  Agency</p>
             <p className="text-white py-5  text-sm font-normal leading-7 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
 
-            <button type="button" className="text-white  bg-[#2370C8] px-10 py-2 rounded-full text-center justify-center  "  >Learn More</button>
+           <Button/>
           </div>
           <div className="mt-20  hidden lg:block  ">
             <Image src='/Frame.png' width={5000} height={5000} />
@@ -49,8 +50,9 @@ export default function Home() {
               <p className="text-[#2370C8] text-sm font-medium">ABOUT US</p>
               <p className="text-5xl font-medium font-sans ">We design, build brands & digital projects.</p>
               <p className="py-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic unde optio sunt nesciunt deserunt totam accusamus quod ratione. Dolorem numquam non corporis, dolores ducimus rerum sit veniam soluta recusandae? Maxime!</p>
-              <br />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, deleniti ut excepturi labore facere nobis corporis </p>
+              
+              <p className="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, deleniti ut excepturi labore facere nobis corporis </p>
+              <Button/>
             </div>
           </div>
         </div>
