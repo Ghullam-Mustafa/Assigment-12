@@ -8,3 +8,14 @@
 height: 789px; */
 }
 
+.img{
+    align-items: center;
+    
+}
+
+
+
+:hover .boxx{
+background-color: #CFEAFF;
+
+}
