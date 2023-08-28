@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function navbar() {
   return (
 <>
-    <div className="flex  justify-between mx-auto container items-center p-2 bg-transparent blur-5">
+    <div className="flex  justify-between mx-auto w-10/12 container items-center p-2 bg-transparent blur-5">
         <div className="items-center ">
             <Image src='/logo.png'width={120} height={43.693}  alt=" logo"  className="hidden sm:hidden md:hidden lg:block "  />
             <Image src='/logo.png'width={60} height={21}  alt=" logo" className=" lg:hidden "/>
