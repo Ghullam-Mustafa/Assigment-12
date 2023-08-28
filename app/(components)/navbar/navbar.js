@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+
 
 export default function navbar() {
   return (
@@ -9,13 +11,13 @@ export default function navbar() {
             <Image src='/logo.png'width={60} height={21}  alt=" logo" className=" lg:hidden "/>
         </div>
         <div className=" hidden sm:hidden md:hidden lg:flex space-x-10 items-center second">
-            <div className="text-white">HOME</div>
-            <div className="text-white">ABOUT</div>
-            <div className="text-white">PAGES</div>
-            <div className="text-white">SERVICES</div>
-            <div className="text-white">PORTFOLIO</div>
-            <div className="text-white">BLOG</div>
-            <div className="text-white">CONTACT</div>
+            <div className="text-white"> <Link href="/">HOME</Link> </div>
+            <div className="text-white"> <Link href="/about">ABOUT</Link></div>
+            <div className="text-white"><Link href="/pages">PAGES</Link></div>
+            <div className="text-white"> <Link href="/services">SERVICES</Link></div>
+            <div className="text-white"><Link href="/portfolio">PORTFOLIO</Link></div>
+            <div className="text-white"><Link href="/blog">BLOG</Link></div>
+            <div className="text-white"> <Link href="/contact">CONTACT</Link></div>
         </div>
         <div className=" items-center space-x-10 border p-2 rounded-full  hidden  sm:hidden  md:flex lg:flex border-[#2370C8]">
           <p  className="text-[#2370C8]" >Search</p>
