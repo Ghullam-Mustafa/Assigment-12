@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.header{
+    background-image: url(../public/Rectangle\ 1.png);
+    /* width: 1920px;
+height: 789px; */
+}
 
