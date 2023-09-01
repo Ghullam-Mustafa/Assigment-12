@@ -4,6 +4,7 @@ import Plans from "./(components)/plansCard/plansCards";
 import Button from "./(components)/button/button";
 import Card from './(components)/servicesCard/servicesCard';
 import PriceCard from "./(components)/priceCard/priceCard";
+import ClientCard from "./(components)/clientCard/clientCard";
 import PortfolioCards from "./(components)/portfolioCards/portfolioCards";
 
 export default function Home() {
@@ -127,13 +128,24 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 my-10 ">
-            <div className=""><PriceCard title="Basic plane" src="/Premium.png" price="$50" /> </div>
-            <div className=""><PriceCard title="Standart Plan" src="/Premium.png" price="$99" /> </div>
-            <div className=""><PriceCard title="Premium Plan" src="/Premium.png" price="$150" /> </div>
-          </div>
+        <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-2 md:pb-10 sm:grid-cols-1 gap-10 my-10 ">
+          <div className=""><PriceCard title="Basic plane" src="/Premium.png" price="$50" /> </div>
+          <div className=""><PriceCard title="Standart Plan" src="/Premium.png" price="$99" /> </div>
+          <div className=""><PriceCard title="Premium Plan" src="/Premium.png" price="$150" /> </div>
+        </div>
       </div>
-     
+
+      <div className="pricing bg-[#3782D7E5]">
+        <div className="w-10/12 mx-auto py-14">
+
+          <p className=" text-5xl text-center text-[white]">We’re trusted by clients.</p>
+          <div className=" w-10/12  mx-auto grid lg:grid-cols-2 md:grid-cols-2 md:pb-10 sm:grid-cols-1 gap-10 my-10 ">
+            <div className=""><ClientCard src="/one (2).png" title="Edward Hunter" title2="CONSULTANT" /></div>
+            <div className=""><ClientCard src="/one (1).png" title="Mina Whatson" title2="IT SPCIALIST" /></div>
+          </div>
+
+        </div>
+      </div>
 
     </>
   )
