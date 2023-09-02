@@ -74,7 +74,7 @@ export default function Home() {
         <div className=" w-10/12  mx-auto grid lg:grid-cols-3 md:grid-cols-2 md:pb-10 sm:grid-cols-1 gap-10 my-10 ">
           <div className="x"><PriceCard title="Basic plane" src="/Premium.png" price="$50" /> </div>
           <div className="x"><PriceCard title="Standart Plan" src="/Premium.png" price="$99" /> </div>
-          {/* <div className="x"><PriceCard title="Premium Plan" src="/Premium.png" price="$150" /> </div> */}
+          <div className="x"><PriceCard title="Premium Plan" src="/Premium.png" price="$150" /> </div>
         </div>
       </div>
 
