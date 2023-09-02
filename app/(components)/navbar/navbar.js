@@ -21,7 +21,7 @@ export default function navbar() {
         </div>
         <div className=" items-center space-x-10 border p-2 m-1 rounded-full  hidden  sm:hidden  bg-white md:flex lg:flex border-[#2370C8]">
           <p  className="text-[#2370C8]" >Search</p>
-          <div className=""> <Image src='/magnify.png' width={21} height={21.846} alt="search" /> </div>
+          <div className=""> <Image src='/magnify.png' width={21} height={21.846} alt="search"  /> </div>
         </div>
     </div>
 </>

@@ -7,7 +7,7 @@ export default function about() {
      <div className="aboutus ">
           <div className=" w-10/12 mt-32 mx-auto grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 my-10 ">
             <div className="">
-              <Image src="/pngwing.png" width={500} height={500} />
+              <Image src="/pngwing.png" width={500} height={500} alt="...." />
             </div>
             <div className="mt-5">
               <p className="text-[#2370C8] text-sm font-medium">ABOUT US</p>

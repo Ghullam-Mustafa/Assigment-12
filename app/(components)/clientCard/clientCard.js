@@ -4,7 +4,8 @@ export default function clientCard(props) {
 <>
 <div className="border-[#2370C8] border-2 text-center shadow-lg hover:bg-[#CFEAFF]  p-5">
                 <div className="text-center align-middle ">
-                <Image src={props.src}  width={50} height={50} className=' mx-auto' />
+  return (
+                <Image src={props.src}  width={50} height={50} className=' mx-auto' alt="..." />
                 </div>
                 <p className='text-center text-2xl text-white'>{props.title}  </p>
                 <p className='text-center text-xl text-white'>{props.title2}  </p>
