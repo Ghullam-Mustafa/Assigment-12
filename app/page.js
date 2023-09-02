@@ -26,8 +26,8 @@ export default function Home() {
 
             <Button title="Learn More" />
           </div>
-          <div className="mt-20  hidden lg:block  ">
-            <Image src='/Frame.png' width={5000} height={5000} alt="Picture of the author" />
+          <div className="mt-20  hidden lg:block  animate-fade-up animate-once  ">
+            <Image src='/Frame.png' width={5000} height={5000} className="animate-fade-up animate-once" alt="Picture of the author" />
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function Home() {
 
           <p className=" text-5xl text-center text-[white]">We’re trusted by clients.</p>
           <div className=" w-10/12  mx-auto grid lg:grid-cols-2 md:grid-cols-2 md:pb-10 sm:grid-cols-1 gap-10 my-10 ">
-            <div className="x"><ClientCard src="/one (2).png" title="Edward Hunter" title2="CONSULTANT" /></div>
+            <div className="x hover:animate-fade-down hover:animate-duration-1000 hover:bg-[#CFEAFF] duration-1000"><ClientCard src="/one (2).png" title="Edward Hunter" title2="CONSULTANT" /></div>
             <div className="x"><ClientCard src="/one (1).png" title="Mina Whatson" title2="IT SPCIALIST" /></div>
           </div>
 
@@ -93,9 +93,9 @@ export default function Home() {
 
       <div className="pricing bg-#FFFFFF">
         <div className="w-10/12 mx-auto py-14">
-          <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-wrap -m-4">
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-wrap -m-4">
                 <BlogsCards title="Bluebery" />
                 <BlogsCards title="Bluebery" />
                 <BlogsCards title="Bluebery" />
