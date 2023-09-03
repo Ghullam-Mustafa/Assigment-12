@@ -26,7 +26,7 @@ export default function Home() {
 
             <Button title="Learn More" />
           </div>
-          <div className="mt-20  hidden lg:block  animate-fade-up animate-once  ">
+          <div className="mt-20  hidden lg:block  justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700  ">
             <Image src='/Frame.png' width={5000} height={5000} className="animate-fade-up animate-once" alt="Picture of the author" />
           </div>
         </div>
@@ -56,8 +56,8 @@ export default function Home() {
         </div>
         <div className=" w-10/12  mx-auto grid lg:grid-cols-2 justify-items-center  md:grid-cols-2 sm:grid-cols-1 gap-10 md:pb-20 my-5 ">
           {/* <div className="x"><Image src="/certificate.jpg" width={500} height={500} alt="Picture of the author"/> </div> */}
-          <div className="w-96 hover:shadow-2xl "><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
-          <div className="w-96 hover:shadow-2xl "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
+          <div className="w-96 hover:shadow-2xl flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700"><Image src="/ahmad.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
+          <div className="w-96 hover:shadow-2xl flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 "><Image src="/mustafa.jpg" width={500} height={500} className="rounded-lg " alt="Picture of the author" /> </div>
         </div>
       </div>
 

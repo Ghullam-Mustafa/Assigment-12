@@ -5,7 +5,7 @@ export default function priceCard(props) {
     return (
         <>
 
-            <div className="border-[#2370C8] border-2 text-center shadow-lg hover:bg-[#2370C8] duration-1000 group-hover:text-white  p-5">
+            <div className="border-[#2370C8] border-2 text-center shadow-lg hover:bg-[#6fa9ec] duration-1000 hover:text-white  p-5">
                 <p className="text-[#262A4E] text-xl font-medium  py-3">{props.title}</p>
                 <div className="text-center align-middle ">
                     <Image src={props.src} width={50} height={50} className=' mx-auto' alt="Picture of the author" />

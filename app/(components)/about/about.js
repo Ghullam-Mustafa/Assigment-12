@@ -6,7 +6,7 @@ export default function about() {
     <>
      <div className="aboutus ">
           <div className=" w-10/12 mt-32 mx-auto grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10 my-10 ">
-            <div className="x">
+            <div className="x flex justify-center transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
               <Image src="/pngwing.png" width={500} height={500} alt="Picture of the author" />
             </div>
             <div className="mt-5">
